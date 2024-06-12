@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: backend
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: zbodiwy_db
+      uri: mongodb://localhost:27017/zbodiwy_db
+security:
+  jwt:
+    key: ${JWT_KEY}
+    access-token-expiration: 3600000
+    refresh-token-expiration: 86400000
