@@ -44,7 +44,7 @@ class TokenService(
     }
 
     fun isValid(token: String, userDetails: UserDetails): Boolean {
-        val userName = extractUsername(userDetails.username)
+        val userName = extractUsername(token)
         return userName == userDetails.username && !isExpired(token)
     }
 

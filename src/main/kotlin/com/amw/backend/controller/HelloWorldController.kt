@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class HelloWorldController {
 
-    @CrossOrigin(origins = arrayOf("http://localhost:4200", "http://192.168.88.120:4200", "http://192.168.88.69:4200"))
+    @CrossOrigin(origins = arrayOf("http://localhost:4200", "http://192.168.88.120:4200", "http://192.168.88.69:4200",  "http://localhost:8099"))
     @GetMapping("/api/hello")
     fun sayHelloWorld() : String {
         return "Hello World!"
     }
 }
+
 
